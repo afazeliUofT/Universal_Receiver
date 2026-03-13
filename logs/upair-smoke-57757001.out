@@ -1,0 +1,31 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCconfig        6)  ucx/1.14.1         11) flexiblas/3.3.1
+  2) gentoo/2023     7)  libfabric/1.18.0   12) blis/0.9.0
+  3) gcccore/.12.3   8)  pmix/4.2.4         13) StdEnv/2023
+  4) gcc/12.3        9)  ucc/1.2.0
+  5) hwloc/2.9.1     10) openmpi/4.1.5
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+[TRAIN] step=00001 loss=0.10395 nmse_prop=0.29836 nmse_ls=0.11223
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+[TRAIN] step=00002 loss=-0.15870 nmse_prop=0.24138 nmse_ls=0.08018
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+[TRAIN] step=00003 loss=-0.34345 nmse_prop=0.19582 nmse_ls=0.06407
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+Traceback (most recent call last):
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/python/3.10.13/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/python/3.10.13/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/rsadve1/PROJECT/Universal_Receiver/src/upair5g/cli.py", line 51, in <module>
+    main()
+  File "/home/rsadve1/PROJECT/Universal_Receiver/src/upair5g/cli.py", line 41, in main
+    train_result = train_model(cfg)
+  File "/home/rsadve1/PROJECT/Universal_Receiver/src/upair5g/training.py", line 182, in train_model
+    estimator.save_weights(str(ckpt_path))
+  File "/home/rsadve1/PROJECT/Universal_Receiver/venv_universal_receiver/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/rsadve1/PROJECT/Universal_Receiver/venv_universal_receiver/lib/python3.10/site-packages/keras/src/saving/saving_lib.py", line 519, in save_weights_only
+    raise ValueError(
+ValueError: You are saving a model that has not yet been built. Try building the model first by calling it on some data or by using `build()`.
