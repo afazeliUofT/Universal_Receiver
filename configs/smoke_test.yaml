@@ -1,0 +1,78 @@
+experiment:
+  name: smoke_upair_cdlc
+  output_root: outputs
+
+system:
+  seed: 11
+  precision: single
+  batch_size_train: 4
+  batch_size_eval: 4
+  ebno_db_train_min: 4.0
+  ebno_db_train_max: 8.0
+  ebno_db_eval: [4, 8]
+
+pusch:
+  carrier_frequency_hz: 3.5e9
+  subcarrier_spacing_khz: 30
+  n_size_grid: 8
+  n_size_bwp: 8
+  cyclic_prefix: normal
+  mapping_type: A
+  symbol_allocation: [0, 14]
+  num_layers: 1
+  num_antenna_ports: 1
+  precoding: non-codebook
+  transform_precoding: false
+  mcs_index: 8
+  mcs_table: qam64
+  dmrs:
+    config_type: 1
+    length: 1
+    additional_position: 0
+    type_a_position: 2
+    num_cdm_groups_without_data: 2
+
+channel:
+  model: C
+  delay_spread_s: 3.0e-7
+  min_speed_mps: 12.0
+  max_speed_mps: 18.0
+  num_rx_ant: 2
+  num_tx_ant: 1
+  normalize_channel: true
+
+impairments:
+  enabled: true
+  train:
+    cpe_sigma_rad: 0.02
+    slope_range_rad: [-0.10, 0.10]
+    rw_sigma_rad: 0.01
+  eval:
+    cpe_sigma_rad: 0.02
+    slope_rad: 0.08
+    rw_sigma_rad: 0.01
+
+model:
+  d_model: 48
+  num_blocks: 2
+  num_heads: 2
+  mlp_ratio: 2.0
+  dropout: 0.0
+  residual_scale: 0.25
+  use_noise_feature: true
+  use_pilot_mask_feature: true
+
+training:
+  steps: 12
+  val_steps: 2
+  log_every: 1
+  eval_every: 4
+  learning_rate: 5.0e-4
+  weight_decay: 1.0e-5
+  nmse_loss_weight: 0.10
+  grad_clip_norm: 1.0
+  checkpoint_name: best.weights.h5
+
+evaluation:
+  num_batches_per_point: 2
+  save_example_batch: true
