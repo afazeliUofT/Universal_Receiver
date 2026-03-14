@@ -1,7 +1,7 @@
 receiver,ebno_db,ber,bler,nmse
-baseline_ls_lmmse,4.0,0.0,0.0,0.11526971682906151
-upair5g_lmmse,4.0,0.0,0.0,0.1359582170844078
+baseline_ls_lmmse,4.0,0.0,0.0,0.11937016248703003
+upair5g_lmmse,4.0,0.0,0.0,0.1457030549645424
 perfect_csi_lmmse,4.0,0.0,0.0,0.0
-baseline_ls_lmmse,8.0,0.0,0.0,0.05638563260436058
-upair5g_lmmse,8.0,0.0,0.0,0.08775151148438454
+baseline_ls_lmmse,8.0,0.0,0.0,0.06645203568041325
+upair5g_lmmse,8.0,0.0,0.0,0.09573961049318314
 perfect_csi_lmmse,8.0,0.0,0.0,0.0

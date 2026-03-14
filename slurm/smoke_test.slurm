@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=upair-smoke
 #SBATCH --account=def-rsadve
-#SBATCH --time=00:30:00
+#SBATCH --time=00:15:00
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=24G
 #SBATCH --gpus-per-node=1
