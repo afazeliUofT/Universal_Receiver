@@ -1,0 +1,69 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCconfig        6)  ucx/1.14.1         11) flexiblas/3.3.1
+  2) gentoo/2023     7)  libfabric/1.18.0   12) blis/0.9.0
+  3) gcccore/.12.3   8)  pmix/4.2.4         13) StdEnv/2023
+  4) gcc/12.3        9)  ucc/1.2.0
+  5) hwloc/2.9.1     10) openmpi/4.1.5
+Identity-init LS regression passed.
+Checkpoint build/save/load regression passed.
+[TRAIN] step=00001 loss=-0.32743 nmse_prop=0.08365 nmse_ls=0.08365
+[TRAIN] step=00100 loss=-1.40228 nmse_prop=0.09572 nmse_ls=0.09935
+[TRAIN] step=00200 loss=-1.01024 nmse_prop=0.14423 nmse_ls=0.16318
+[TRAIN] step=00300 loss=-1.24611 nmse_prop=0.10930 nmse_ls=0.16046
+[TRAIN] step=00400 loss=-2.35002 nmse_prop=0.05698 nmse_ls=0.07441
+[TRAIN] step=00500 loss=-2.45627 nmse_prop=0.05655 nmse_ls=0.07980
+[TRAIN] step=00600 loss=-1.39669 nmse_prop=0.09278 nmse_ls=0.17153
+[TRAIN] step=00700 loss=-1.89047 nmse_prop=0.05583 nmse_ls=0.12215
+[TRAIN] step=00800 loss=-2.19110 nmse_prop=0.05076 nmse_ls=0.10442
+[TRAIN] step=00900 loss=-2.27448 nmse_prop=0.04392 nmse_ls=0.09856
+[TRAIN] step=01000 loss=-2.36844 nmse_prop=0.03874 nmse_ls=0.09368
+[TRAIN] step=01100 loss=-3.03249 nmse_prop=0.02566 nmse_ls=0.07045
+[TRAIN] step=01200 loss=-1.43738 nmse_prop=0.08610 nmse_ls=0.19848
+[TRAIN] step=01300 loss=-1.41240 nmse_prop=0.08500 nmse_ls=0.19013
+[TRAIN] step=01400 loss=-1.51917 nmse_prop=0.07191 nmse_ls=0.16635
+[TRAIN] step=01500 loss=-2.75160 nmse_prop=0.03237 nmse_ls=0.09726
+[TRAIN] step=01600 loss=-2.91816 nmse_prop=0.02543 nmse_ls=0.07503
+[TRAIN] step=01700 loss=-2.88470 nmse_prop=0.02252 nmse_ls=0.06735
+[TRAIN] step=01800 loss=-2.73605 nmse_prop=0.02804 nmse_ls=0.08882
+[TRAIN] step=01900 loss=-1.97834 nmse_prop=0.04367 nmse_ls=0.13655
+[TRAIN] step=02000 loss=-1.50681 nmse_prop=0.06890 nmse_ls=0.18674
+[TRAIN] step=02100 loss=-2.83004 nmse_prop=0.02509 nmse_ls=0.09933
+[TRAIN] step=02200 loss=-2.34579 nmse_prop=0.03049 nmse_ls=0.11016
+[TRAIN] step=02300 loss=-2.38612 nmse_prop=0.03161 nmse_ls=0.10750
+[TRAIN] step=02400 loss=-1.71354 nmse_prop=0.05159 nmse_ls=0.16183
+[TRAIN] step=02500 loss=-2.81127 nmse_prop=0.02245 nmse_ls=0.09186
+[TRAIN] step=02600 loss=-3.47322 nmse_prop=0.01507 nmse_ls=0.07218
+[TRAIN] step=02700 loss=-2.72212 nmse_prop=0.02571 nmse_ls=0.10492
+[TRAIN] step=02800 loss=-3.30433 nmse_prop=0.01723 nmse_ls=0.07690
+[TRAIN] step=02900 loss=-3.46977 nmse_prop=0.01495 nmse_ls=0.09184
+[TRAIN] step=03000 loss=-2.01351 nmse_prop=0.03975 nmse_ls=0.14842
+[EVAL] receiver= baseline_ls_lmmse Eb/N0= 0.0 dB BER=1.50492e-02 BLER=1.07031e-01 NMSE=2.01570e-01
+[EVAL] receiver=     upair5g_lmmse Eb/N0= 0.0 dB BER=5.19480e-04 BLER=4.81771e-03 NMSE=5.75610e-02
+[EVAL] receiver= perfect_csi_lmmse Eb/N0= 0.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver= baseline_ls_lmmse Eb/N0= 2.0 dB BER=6.80091e-03 BLER=4.50521e-02 NMSE=1.53282e-01
+[EVAL] receiver=     upair5g_lmmse Eb/N0= 2.0 dB BER=1.87890e-05 BLER=5.20833e-04 NMSE=3.97662e-02
+[EVAL] receiver= perfect_csi_lmmse Eb/N0= 2.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver= baseline_ls_lmmse Eb/N0= 4.0 dB BER=4.38792e-03 BLER=2.78646e-02 NMSE=1.23041e-01
+[EVAL] receiver=     upair5g_lmmse Eb/N0= 4.0 dB BER=9.31716e-05 BLER=5.20833e-04 NMSE=2.98677e-02
+[EVAL] receiver= perfect_csi_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver= baseline_ls_lmmse Eb/N0= 6.0 dB BER=4.03712e-03 BLER=3.19010e-02 NMSE=1.05616e-01
+[EVAL] receiver=     upair5g_lmmse Eb/N0= 6.0 dB BER=2.91500e-05 BLER=2.60417e-04 NMSE=2.38976e-02
+[EVAL] receiver= perfect_csi_lmmse Eb/N0= 6.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver= baseline_ls_lmmse Eb/N0= 8.0 dB BER=4.05842e-03 BLER=4.25781e-02 NMSE=9.44798e-02
+[EVAL] receiver=     upair5g_lmmse Eb/N0= 8.0 dB BER=5.79906e-05 BLER=6.51042e-04 NMSE=1.99050e-02
+[EVAL] receiver= perfect_csi_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver= baseline_ls_lmmse Eb/N0=10.0 dB BER=3.87323e-03 BLER=5.33854e-02 NMSE=8.55066e-02
+[EVAL] receiver=     upair5g_lmmse Eb/N0=10.0 dB BER=6.04263e-05 BLER=3.90625e-04 NMSE=1.68305e-02
+[EVAL] receiver= perfect_csi_lmmse Eb/N0=10.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver= baseline_ls_lmmse Eb/N0=12.0 dB BER=4.39581e-03 BLER=6.73177e-02 NMSE=8.04445e-02
+[EVAL] receiver=     upair5g_lmmse Eb/N0=12.0 dB BER=1.15981e-07 BLER=2.60417e-04 NMSE=1.51473e-02
+[EVAL] receiver= perfect_csi_lmmse Eb/N0=12.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver= baseline_ls_lmmse Eb/N0=14.0 dB BER=5.12506e-03 BLER=8.46354e-02 NMSE=7.77447e-02
+[EVAL] receiver=     upair5g_lmmse Eb/N0=14.0 dB BER=8.88803e-05 BLER=6.51042e-04 NMSE=1.39941e-02
+[EVAL] receiver= perfect_csi_lmmse Eb/N0=14.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver= baseline_ls_lmmse Eb/N0=16.0 dB BER=6.27668e-03 BLER=9.72656e-02 NMSE=7.63210e-02
+[EVAL] receiver=     upair5g_lmmse Eb/N0=16.0 dB BER=6.56068e-05 BLER=9.11458e-04 NMSE=1.34043e-02
+[EVAL] receiver= perfect_csi_lmmse Eb/N0=16.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+{'train': {'output_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility', 'checkpoint_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility/checkpoints/best.weights.h5', 'history_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility/metrics/history.json'}, 'eval': {'output_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility', 'curves_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility/metrics/curves.csv', 'summary_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility/metrics/evaluation_summary.json'}, 'plots': {'plots_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility/plots'}}

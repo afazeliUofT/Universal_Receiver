@@ -1,0 +1,29 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCconfig        6)  ucx/1.14.1         11) flexiblas/3.3.1
+  2) gentoo/2023     7)  libfabric/1.18.0   12) blis/0.9.0
+  3) gcccore/.12.3   8)  pmix/4.2.4         13) StdEnv/2023
+  4) gcc/12.3        9)  ucc/1.2.0
+  5) hwloc/2.9.1     10) openmpi/4.1.5
+Identity-init LS regression passed.
+Checkpoint build/save/load regression passed.
+[TRAIN] step=00001 loss=-1.23516 nmse_prop=0.10572 nmse_ls=0.10572
+[TRAIN] step=00002 loss=-1.69568 nmse_prop=0.06564 nmse_ls=0.06566
+[TRAIN] step=00003 loss=-1.77455 nmse_prop=0.06151 nmse_ls=0.06188
+[TRAIN] step=00004 loss=-1.41831 nmse_prop=0.08822 nmse_ls=0.08854
+[TRAIN] step=00005 loss=-1.34737 nmse_prop=0.09472 nmse_ls=0.09560
+[TRAIN] step=00006 loss=-1.31116 nmse_prop=0.09790 nmse_ls=0.09868
+[TRAIN] step=00007 loss=-1.35100 nmse_prop=0.09432 nmse_ls=0.09587
+[TRAIN] step=00008 loss=-1.25038 nmse_prop=0.10408 nmse_ls=0.10618
+[TRAIN] step=00009 loss=-1.81641 nmse_prop=0.05905 nmse_ls=0.05914
+[TRAIN] step=00010 loss=-1.41187 nmse_prop=0.08875 nmse_ls=0.08953
+[TRAIN] step=00011 loss=-1.49144 nmse_prop=0.08202 nmse_ls=0.08396
+[TRAIN] step=00012 loss=-1.21334 nmse_prop=0.10772 nmse_ls=0.11045
+[EVAL] receiver= baseline_ls_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.16302e-01
+[EVAL] receiver=     upair5g_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.14237e-01
+[EVAL] receiver= perfect_csi_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver= baseline_ls_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=6.00811e-02
+[EVAL] receiver=     upair5g_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=5.91520e-02
+[EVAL] receiver= perfect_csi_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+{'train': {'output_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc', 'checkpoint_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc/checkpoints/best.weights.h5', 'history_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc/metrics/history.json'}, 'eval': {'output_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc', 'curves_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc/metrics/curves.csv', 'summary_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc/metrics/evaluation_summary.json'}, 'plots': {'plots_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc/plots'}}
