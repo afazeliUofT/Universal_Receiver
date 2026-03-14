@@ -1,0 +1,40 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCconfig        6)  ucx/1.14.1         11) flexiblas/3.3.1
+  2) gentoo/2023     7)  libfabric/1.18.0   12) blis/0.9.0
+  3) gcccore/.12.3   8)  pmix/4.2.4         13) StdEnv/2023
+  4) gcc/12.3        9)  ucc/1.2.0
+  5) hwloc/2.9.1     10) openmpi/4.1.5
+Checkpoint build/save/load regression passed.
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+[TRAIN] step=00001 loss=0.09728 nmse_prop=0.29381 nmse_ls=0.10483
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+[TRAIN] step=00002 loss=-0.15436 nmse_prop=0.22281 nmse_ls=0.06835
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+[TRAIN] step=00003 loss=-0.34246 nmse_prop=0.18807 nmse_ls=0.06237
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+[TRAIN] step=00004 loss=-0.43598 nmse_prop=0.18453 nmse_ls=0.07389
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+[TRAIN] step=00005 loss=-0.68296 nmse_prop=0.13033 nmse_ls=0.06496
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+[TRAIN] step=00006 loss=-0.63770 nmse_prop=0.16660 nmse_ls=0.10245
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+[TRAIN] step=00007 loss=-0.81801 nmse_prop=0.13201 nmse_ls=0.07805
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+[TRAIN] step=00008 loss=-0.86181 nmse_prop=0.13891 nmse_ls=0.08963
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+[TRAIN] step=00009 loss=-1.17208 nmse_prop=0.10092 nmse_ls=0.06196
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+[TRAIN] step=00010 loss=-1.10217 nmse_prop=0.11376 nmse_ls=0.07130
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+[TRAIN] step=00011 loss=-1.08304 nmse_prop=0.11798 nmse_ls=0.08339
+WARNING:tensorflow:You are casting an input of type complex64 to an incompatible dtype float32.  This will discard the imaginary part and may not be what you intended.
+[TRAIN] step=00012 loss=-0.96757 nmse_prop=0.13760 nmse_ls=0.10785
+[EVAL] receiver= baseline_ls_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.15270e-01
+[EVAL] receiver=     upair5g_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.35958e-01
+[EVAL] receiver= perfect_csi_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver= baseline_ls_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=5.63856e-02
+[EVAL] receiver=     upair5g_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=8.77515e-02
+[EVAL] receiver= perfect_csi_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+{'train': {'output_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc', 'checkpoint_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc/checkpoints/best.weights.h5', 'history_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc/metrics/history.json'}, 'eval': {'output_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc', 'curves_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc/metrics/curves.csv', 'summary_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc/metrics/evaluation_summary.json'}, 'plots': {'plots_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc/plots'}}

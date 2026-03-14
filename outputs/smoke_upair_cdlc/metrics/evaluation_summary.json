@@ -1,0 +1,8 @@
+{
+  "best_bler_baseline": 0.0,
+  "best_bler_upair5g": 0.0,
+  "best_nmse_baseline": 0.05638563260436058,
+  "best_nmse_upair5g": 0.08775151148438454,
+  "checkpoint_path": "/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc/checkpoints/best.weights.h5",
+  "curves_csv": "/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc/metrics/curves.csv"
+}
