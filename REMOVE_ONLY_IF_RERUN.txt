@@ -1,0 +1,10 @@
+For the first phase-aware run: remove nothing from your old results.
+
+Only if you rerun the new phase-aware jobs after a failed or stale previous phase-aware run, clean these and only these:
+- logs/upair-smoke-phaseaware-*.out
+- logs/upair-compare-phaseaware-*.out
+- outputs/smoke_upair_cdlc_phaseaware_baselines/
+- outputs/upair_cdlc_highmobility_phaseaware_baselines/
+
+Helper script included:
+- bash scripts/cleanup_phaseaware_rerun.sh
