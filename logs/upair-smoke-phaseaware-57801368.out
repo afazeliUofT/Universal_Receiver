@@ -1,0 +1,32 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCconfig        6)  ucx/1.14.1         11) flexiblas/3.3.1
+  2) gentoo/2023     7)  libfabric/1.18.0   12) blis/0.9.0
+  3) gcccore/.12.3   8)  pmix/4.2.4         13) StdEnv/2023
+  4) gcc/12.3        9)  ucc/1.2.0
+  5) hwloc/2.9.1     10) openmpi/4.1.5
+Identity-init LS regression passed.
+Checkpoint build/save/load regression passed.
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=4 batch_size=8 use_training_impairments=False
+Baseline forward passed: baseline_ls_lmmse
+Baseline forward passed: baseline_ls_timeavg_lmmse
+Baseline forward passed: baseline_ls_2dlmmse_lmmse
+Baseline forward passed: baseline_ddcpe_ls_lmmse
+Baseline forward passed: upair5g_lmmse
+Baseline forward passed: perfect_csi_lmmse
+Richer-baselines regression passed.
+Phase-aware identity/build regression passed.
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 4.0 dB BER=6.54561e-03 BLER=1.25000e-01 NMSE=1.30263e-01
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 4.0 dB BER=6.54561e-03 BLER=1.25000e-01 NMSE=1.30263e-01
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 4.0 dB BER=7.80405e-02 BLER=3.75000e-01 NMSE=2.58524e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 4.0 dB BER=4.22297e-03 BLER=6.25000e-02 NMSE=1.11207e-01
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 4.0 dB BER=5.23649e-03 BLER=1.25000e-01 NMSE=1.27698e-01
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=6.46913e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=6.46913e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 8.0 dB BER=1.16554e-02 BLER=6.25000e-02 NMSE=2.10137e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=5.46572e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=6.35834e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+{'eval': {'output_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc_phaseaware_baselines', 'curves_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc_phaseaware_baselines/metrics/curves.csv', 'summary_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc_phaseaware_baselines/metrics/evaluation_summary.json'}, 'plots': {'plots_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc_phaseaware_baselines/plots'}}

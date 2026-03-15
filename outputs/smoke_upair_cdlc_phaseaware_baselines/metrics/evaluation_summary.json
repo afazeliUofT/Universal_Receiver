@@ -1,0 +1,67 @@
+{
+  "best_ber_classical": {
+    "receiver": "baseline_ls_lmmse",
+    "value": 0.0
+  },
+  "best_ber_upair5g": 0.0,
+  "best_bler_classical": {
+    "receiver": "baseline_ls_lmmse",
+    "value": 0.0
+  },
+  "best_bler_upair5g": 0.0,
+  "best_nmse_classical": {
+    "receiver": "baseline_ddcpe_ls_lmmse",
+    "value": 0.054657191038131714
+  },
+  "best_nmse_upair5g": 0.0635834177955985,
+  "checkpoint_path": "/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc/checkpoints/best.weights.h5",
+  "classical_receivers": [
+    "baseline_ls_lmmse",
+    "baseline_ls_timeavg_lmmse",
+    "baseline_ls_2dlmmse_lmmse",
+    "baseline_ddcpe_ls_lmmse"
+  ],
+  "curves_csv": "/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc_phaseaware_baselines/metrics/curves.csv",
+  "empirical_covariances": "/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc_phaseaware_baselines/artifacts/empirical_covariances.npz",
+  "enabled_receivers": [
+    "baseline_ls_lmmse",
+    "baseline_ls_timeavg_lmmse",
+    "baseline_ls_2dlmmse_lmmse",
+    "baseline_ddcpe_ls_lmmse",
+    "upair5g_lmmse",
+    "perfect_csi_lmmse"
+  ],
+  "num_curve_rows": 12,
+  "per_ebno_best_classical": [
+    {
+      "ber_gap_upair_minus_best_classical": 0.0010135138290934265,
+      "ber_upair5g": 0.0052364866132847965,
+      "best_ber_classical": 0.00422297278419137,
+      "best_ber_classical_receiver": "baseline_ddcpe_ls_lmmse",
+      "best_bler_classical": 0.0625,
+      "best_bler_classical_receiver": "baseline_ddcpe_ls_lmmse",
+      "best_nmse_classical": 0.11120736785233021,
+      "best_nmse_classical_receiver": "baseline_ddcpe_ls_lmmse",
+      "bler_gap_upair_minus_best_classical": 0.0625,
+      "bler_upair5g": 0.125,
+      "ebno_db": 4.0,
+      "nmse_gap_upair_minus_best_classical": 0.016490818932652473,
+      "nmse_upair5g": 0.12769818678498268
+    },
+    {
+      "ber_gap_upair_minus_best_classical": 0.0,
+      "ber_upair5g": 0.0,
+      "best_ber_classical": 0.0,
+      "best_ber_classical_receiver": "baseline_ls_lmmse",
+      "best_bler_classical": 0.0,
+      "best_bler_classical_receiver": "baseline_ls_lmmse",
+      "best_nmse_classical": 0.054657191038131714,
+      "best_nmse_classical_receiver": "baseline_ddcpe_ls_lmmse",
+      "bler_gap_upair_minus_best_classical": 0.0,
+      "bler_upair5g": 0.0,
+      "ebno_db": 8.0,
+      "nmse_gap_upair_minus_best_classical": 0.008926226757466793,
+      "nmse_upair5g": 0.0635834177955985
+    }
+  ]
+}
