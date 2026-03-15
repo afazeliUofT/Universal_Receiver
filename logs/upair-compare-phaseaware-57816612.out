@@ -1,0 +1,73 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCconfig        6)  ucx/1.14.1         11) flexiblas/3.3.1
+  2) gentoo/2023     7)  libfabric/1.18.0   12) blis/0.9.0
+  3) gcccore/.12.3   8)  pmix/4.2.4         13) StdEnv/2023
+  4) gcc/12.3        9)  ucc/1.2.0
+  5) hwloc/2.9.1     10) openmpi/4.1.5
+Identity-init LS regression passed.
+Checkpoint build/save/load regression passed.
+Baseline forward passed: baseline_ls_lmmse
+Baseline forward passed: baseline_ls_timeavg_lmmse
+Baseline forward passed: baseline_ls_2dlmmse_lmmse
+Baseline forward passed: baseline_ddcpe_ls_lmmse
+Baseline forward passed: upair5g_lmmse
+Baseline forward passed: perfect_csi_lmmse
+Richer-baselines regression passed.
+Phase-aware identity/build regression passed.
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 0.0 dB BER=1.50164e-02 BLER=1.05599e-01 NMSE=2.00890e-01
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 0.0 dB BER=1.50154e-02 BLER=1.05599e-01 NMSE=2.00890e-01
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 0.0 dB BER=1.83013e-01 BLER=8.89323e-01 NMSE=5.79226e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 0.0 dB BER=1.31718e-02 BLER=9.32292e-02 NMSE=1.97336e-01
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 0.0 dB BER=4.22172e-04 BLER=4.16667e-03 NMSE=5.75466e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 0.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 2.0 dB BER=7.66872e-03 BLER=4.55729e-02 NMSE=1.54208e-01
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 2.0 dB BER=7.64993e-03 BLER=4.55729e-02 NMSE=1.54208e-01
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 2.0 dB BER=1.41398e-01 BLER=7.17318e-01 NMSE=5.50042e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 2.0 dB BER=6.25201e-03 BLER=3.85417e-02 NMSE=1.47200e-01
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 2.0 dB BER=3.10753e-04 BLER=2.47396e-03 NMSE=4.02238e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 2.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 4.0 dB BER=4.15167e-03 BLER=2.66927e-02 NMSE=1.23587e-01
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 4.0 dB BER=4.17768e-03 BLER=2.72135e-02 NMSE=1.23587e-01
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 4.0 dB BER=1.16553e-01 BLER=5.86979e-01 NMSE=5.26204e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 4.0 dB BER=3.05340e-03 BLER=1.99219e-02 NMSE=1.12550e-01
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 4.0 dB BER=1.55531e-04 BLER=6.51042e-04 NMSE=3.00132e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 6.0 dB BER=3.57543e-03 BLER=2.99479e-02 NMSE=1.05414e-01
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 6.0 dB BER=3.59859e-03 BLER=3.00781e-02 NMSE=1.05414e-01
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 6.0 dB BER=1.02789e-01 BLER=5.00000e-01 NMSE=5.10685e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 6.0 dB BER=2.45200e-03 BLER=2.03125e-02 NMSE=9.08584e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 6.0 dB BER=6.25912e-05 BLER=2.60417e-04 NMSE=2.37976e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 6.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 8.0 dB BER=3.51880e-03 BLER=3.77604e-02 NMSE=9.14420e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 8.0 dB BER=3.49220e-03 BLER=3.78906e-02 NMSE=9.14420e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 8.0 dB BER=8.65351e-02 BLER=4.33854e-01 NMSE=4.94192e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 8.0 dB BER=1.73079e-03 BLER=2.26562e-02 NMSE=7.51882e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 8.0 dB BER=9.03108e-05 BLER=3.90625e-04 NMSE=1.94226e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=10.0 dB BER=3.90018e-03 BLER=5.26042e-02 NMSE=8.58515e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0=10.0 dB BER=3.86856e-03 BLER=5.28646e-02 NMSE=8.58515e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=10.0 dB BER=8.09769e-02 BLER=4.37370e-01 NMSE=4.87295e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=10.0 dB BER=1.95846e-03 BLER=3.22917e-02 NMSE=6.84703e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0=10.0 dB BER=3.14696e-05 BLER=5.20833e-04 NMSE=1.69509e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=10.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=12.0 dB BER=4.53792e-03 BLER=6.67969e-02 NMSE=8.02543e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0=12.0 dB BER=4.51028e-03 BLER=6.69271e-02 NMSE=8.02543e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=12.0 dB BER=7.48684e-02 BLER=4.47786e-01 NMSE=4.73870e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=12.0 dB BER=2.26484e-03 BLER=3.54167e-02 NMSE=6.24741e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0=12.0 dB BER=3.86604e-08 BLER=1.30208e-04 NMSE=1.50017e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=12.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=14.0 dB BER=5.17880e-03 BLER=8.26823e-02 NMSE=7.82657e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0=14.0 dB BER=5.18413e-03 BLER=8.25521e-02 NMSE=7.82657e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=14.0 dB BER=7.47251e-02 BLER=4.99740e-01 NMSE=4.66629e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=14.0 dB BER=2.41628e-03 BLER=4.28385e-02 NMSE=5.99986e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0=14.0 dB BER=1.05775e-04 BLER=6.51042e-04 NMSE=1.41790e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=14.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=16.0 dB BER=5.91222e-03 BLER=9.57031e-02 NMSE=7.64050e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0=16.0 dB BER=5.90306e-03 BLER=9.58333e-02 NMSE=7.64050e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=16.0 dB BER=7.03432e-02 BLER=5.01432e-01 NMSE=4.50180e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=16.0 dB BER=3.07277e-03 BLER=4.66146e-02 NMSE=5.79323e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0=16.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.31480e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=16.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+{'eval': {'output_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility_phaseaware_baselines', 'curves_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility_phaseaware_baselines/metrics/curves.csv', 'summary_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility_phaseaware_baselines/metrics/evaluation_summary.json'}, 'plots': {'plots_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility_phaseaware_baselines/plots'}}
