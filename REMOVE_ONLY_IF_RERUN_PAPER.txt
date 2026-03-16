@@ -1,0 +1,12 @@
+Only if you are rerunning the new paper-comparison jobs after a failed or stale paper-comparison run, remove these old artifacts first:
+
+- `logs/upair-smoke-paper-*.out`
+- `logs/upair-compare-paper-*.out`
+- `outputs/smoke_upair_cdlc_paper_comparison/`
+- `outputs/upair_cdlc_highmobility_paper_comparison/`
+
+Do NOT remove:
+- old smoke/full logs
+- richer-baseline logs/results
+- phase-aware logs/results
+- old trained checkpoints under `outputs/smoke_upair_cdlc/` and `outputs/upair_cdlc_highmobility/`

@@ -1,20 +1,20 @@
-Overwrite these existing repo files:
-- src/upair5g/baselines.py
-- src/upair5g/evaluation.py
-- src/upair5g/plotting.py
+Overwrite these existing files:
+- `src/upair5g/baselines.py`
+- `src/upair5g/evaluation.py`
+- `src/upair5g/plotting.py`
 
-Add these new repo files:
-- src/upair5g/phase_aware.py
-- configs/smoke_phaseaware_baselines.yaml
-- configs/target_cdlc_highmobility_phaseaware_baselines.yaml
-- scripts/run_smoke_phaseaware_baselines.sh
-- scripts/run_compare_phaseaware_baselines.sh
-- scripts/cleanup_phaseaware_rerun.sh
-- slurm/smoke_phaseaware_baselines.slurm
-- slurm/compare_phaseaware_baselines.slurm
-- tests/regression_phaseaware_identity.py
-- docs/PHASE_AWARE_BASELINES_UPDATE.md
-- FILE_ACTIONS.md
-- REMOVE_ONLY_IF_RERUN.txt
+Add these new files:
+- `src/upair5g/paper_configured_reservoir.py`
+- `configs/smoke_paper_comparison.yaml`
+- `configs/target_cdlc_highmobility_paper_comparison.yaml`
+- `scripts/run_smoke_paper_comparison.sh`
+- `scripts/run_compare_paper_comparison.sh`
+- `scripts/cleanup_paper_comparison_rerun.sh`
+- `slurm/smoke_paper_comparison.slurm`
+- `slurm/compare_paper_comparison.slurm`
+- `tests/regression_paper_cfgres_build.py`
+- `docs/PAPER_COMPARATOR_UPDATE.md`
+- `FILE_ACTIONS.md`
+- `REMOVE_ONLY_IF_RERUN_PAPER.txt`
 
-Do not remove any of the old smoke/full/richer-baseline files or outputs.
+Remove nothing from the old smoke/full/richer-baseline/phase-aware code and outputs.
