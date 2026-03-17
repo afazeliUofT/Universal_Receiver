@@ -1,0 +1,15 @@
+receiver,ebno_db,ber,bler,nmse
+baseline_ls_lmmse,4.0,0.0,0.0,0.12540764547884464
+baseline_ls_timeavg_lmmse,4.0,0.0,0.0,0.12540764547884464
+baseline_ls_2dlmmse_lmmse,4.0,0.05168918892741203,0.25,0.2728561908006668
+baseline_ddcpe_ls_lmmse,4.0,0.0,0.0,0.11250372044742107
+paper_cfgres_ls_lmmse,4.0,0.001435810816474259,0.0625,0.13242175057530403
+upair5g_lmmse,4.0,0.0,0.0,0.12262995541095734
+perfect_csi_lmmse,4.0,0.0,0.0,0.0
+baseline_ls_lmmse,8.0,0.0,0.0,0.06481610052287579
+baseline_ls_timeavg_lmmse,8.0,0.0,0.0,0.06481610052287579
+baseline_ls_2dlmmse_lmmse,8.0,0.008108108304440975,0.0625,0.2581293098628521
+baseline_ddcpe_ls_lmmse,8.0,0.0,0.0,0.05450000241398811
+paper_cfgres_ls_lmmse,8.0,0.0,0.0,0.1287670750170946
+upair5g_lmmse,8.0,0.0,0.0,0.06403160467743874
+perfect_csi_lmmse,8.0,0.0,0.0,0.0

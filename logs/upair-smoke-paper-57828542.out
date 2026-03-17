@@ -1,0 +1,39 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCconfig        6)  ucx/1.14.1         11) flexiblas/3.3.1
+  2) gentoo/2023     7)  libfabric/1.18.0   12) blis/0.9.0
+  3) gcccore/.12.3   8)  pmix/4.2.4         13) StdEnv/2023
+  4) gcc/12.3        9)  ucc/1.2.0
+  5) hwloc/2.9.1     10) openmpi/4.1.5
+Identity-init LS regression passed.
+Checkpoint build/save/load regression passed.
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=4 batch_size=8 use_training_impairments=False
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=4 batch_size=8 use_training_impairments=True
+Baseline forward passed: baseline_ls_lmmse
+Baseline forward passed: baseline_ls_timeavg_lmmse
+Baseline forward passed: baseline_ls_2dlmmse_lmmse
+Baseline forward passed: baseline_ddcpe_ls_lmmse
+Baseline forward passed: paper_cfgres_ls_lmmse
+Baseline forward passed: upair5g_lmmse
+Baseline forward passed: perfect_csi_lmmse
+Richer-baselines regression passed.
+Phase-aware identity/build regression passed.
+Paper configured-reservoir regression passed.
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.25408e-01
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.25408e-01
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 4.0 dB BER=5.16892e-02 BLER=2.50000e-01 NMSE=2.72856e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.12504e-01
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0= 4.0 dB BER=1.43581e-03 BLER=6.25000e-02 NMSE=1.32422e-01
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.22630e-01
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=6.48161e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=6.48161e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 8.0 dB BER=8.10811e-03 BLER=6.25000e-02 NMSE=2.58129e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=5.45000e-02
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.28767e-01
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=6.40316e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+/home/rsadve1/PROJECT/Universal_Receiver/src/upair5g/plotting.py:73: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  fig.tight_layout()
+{'eval': {'output_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc_paper_comparison', 'curves_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc_paper_comparison/metrics/curves.csv', 'summary_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc_paper_comparison/metrics/evaluation_summary.json'}, 'plots': {'plots_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc_paper_comparison/plots'}}

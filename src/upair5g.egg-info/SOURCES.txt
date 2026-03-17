@@ -10,6 +10,7 @@ src/upair5g/config.py
 src/upair5g/estimator.py
 src/upair5g/evaluation.py
 src/upair5g/impairments.py
+src/upair5g/paper_configured_reservoir.py
 src/upair5g/phase_aware.py
 src/upair5g/plotting.py
 src/upair5g/training.py
