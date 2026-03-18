@@ -1,0 +1,13 @@
+Only if you want a clean rerun of the publication-robustness plotting job, remove:
+- `outputs/publication_robustness_summary/`
+- old `logs/upair-publication-robustness-*.out`
+
+Do not remove:
+- old smoke logs
+- old full logs
+- richer-baseline logs
+- phase-aware logs
+- paper-comparison logs
+- paper-phasefair logs
+- clean-control outputs
+- DMRS-rich-control outputs
