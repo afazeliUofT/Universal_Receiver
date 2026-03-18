@@ -1,9 +1,9 @@
 receiver,ebno_db,ber,bler,nmse
-baseline_ls_lmmse,8.0,0.0,0.0,0.0638736430555582
-baseline_ls_timeavg_lmmse,8.0,0.0,0.0,0.0638736430555582
-baseline_ls_2dlmmse_lmmse,8.0,0.0219594594091177,0.125,0.2415118664503097
-baseline_ddcpe_ls_lmmse,8.0,0.0,0.0,0.0502791265025734
-paper_cfgres_ls_lmmse,8.0,0.0,0.0,0.1451845429837703
-paper_cfgres_phaseaware_ls_lmmse,8.0,0.0,0.0,0.0534986518323421
-upair5g_lmmse,8.0,0.0,0.0,0.062829315662384
+baseline_ls_lmmse,8.0,0.0,0.0,0.0624708458781242
+baseline_ls_timeavg_lmmse,8.0,0.0,0.0,0.0624708458781242
+baseline_ls_2dlmmse_lmmse,8.0,0.0057854729820974,0.125,0.2272103428840637
+baseline_ddcpe_ls_lmmse,8.0,0.0,0.0,0.0481496527791023
+paper_cfgres_ls_lmmse,8.0,0.0,0.0,0.122014369815588
+paper_cfgres_phaseaware_ls_lmmse,8.0,0.0,0.0,0.0482356045395135
+upair5g_lmmse,8.0,0.0,0.0,0.0616802955046296
 perfect_csi_lmmse,8.0,0.0,0.0,0.0

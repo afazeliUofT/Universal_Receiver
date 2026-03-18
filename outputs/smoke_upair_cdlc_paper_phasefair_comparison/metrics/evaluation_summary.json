@@ -1,19 +1,19 @@
 {
   "best_ber_classical": {
-    "receiver": "baseline_ddcpe_ls_lmmse",
+    "receiver": "baseline_ls_lmmse",
     "value": 0.0
   },
   "best_ber_upair5g": 0.0,
   "best_bler_classical": {
-    "receiver": "baseline_ddcpe_ls_lmmse",
+    "receiver": "baseline_ls_lmmse",
     "value": 0.0
   },
   "best_bler_upair5g": 0.0,
   "best_nmse_classical": {
     "receiver": "baseline_ddcpe_ls_lmmse",
-    "value": 0.05027912650257349
+    "value": 0.048149652779102325
   },
-  "best_nmse_upair5g": 0.06282931566238403,
+  "best_nmse_upair5g": 0.06168029550462961,
   "checkpoint_path": "/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc/checkpoints/best.weights.h5",
   "classical_receivers": [
     "baseline_ls_lmmse",
@@ -42,19 +42,19 @@
   "paper_cfgres_phasefair_covariances": "/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc_paper_phasefair_comparison/artifacts/paper_cfgres_phasefair_covariances.npz",
   "per_ebno_best_classical": [
     {
-      "ber_gap_upair_minus_best_classical": 0.005912162363529205,
-      "ber_upair5g": 0.005912162363529205,
+      "ber_gap_upair_minus_best_classical": 0.0,
+      "ber_upair5g": 0.0,
       "best_ber_classical": 0.0,
-      "best_ber_classical_receiver": "baseline_ddcpe_ls_lmmse",
+      "best_ber_classical_receiver": "baseline_ls_lmmse",
       "best_bler_classical": 0.0,
-      "best_bler_classical_receiver": "baseline_ddcpe_ls_lmmse",
-      "best_nmse_classical": 0.08470492623746395,
+      "best_bler_classical_receiver": "baseline_ls_lmmse",
+      "best_nmse_classical": 0.07952193357050419,
       "best_nmse_classical_receiver": "paper_cfgres_phaseaware_ls_lmmse",
-      "bler_gap_upair_minus_best_classical": 0.0625,
-      "bler_upair5g": 0.0625,
+      "bler_gap_upair_minus_best_classical": 0.0,
+      "bler_upair5g": 0.0,
       "ebno_db": 4.0,
-      "nmse_gap_upair_minus_best_classical": 0.03349833935499191,
-      "nmse_upair5g": 0.11820326559245586
+      "nmse_gap_upair_minus_best_classical": 0.03901812806725502,
+      "nmse_upair5g": 0.11854006163775921
     },
     {
       "ber_gap_upair_minus_best_classical": 0.0,
@@ -63,13 +63,13 @@
       "best_ber_classical_receiver": "baseline_ls_lmmse",
       "best_bler_classical": 0.0,
       "best_bler_classical_receiver": "baseline_ls_lmmse",
-      "best_nmse_classical": 0.05027912650257349,
+      "best_nmse_classical": 0.048149652779102325,
       "best_nmse_classical_receiver": "baseline_ddcpe_ls_lmmse",
       "bler_gap_upair_minus_best_classical": 0.0,
       "bler_upair5g": 0.0,
       "ebno_db": 8.0,
-      "nmse_gap_upair_minus_best_classical": 0.012550189159810543,
-      "nmse_upair5g": 0.06282931566238403
+      "nmse_gap_upair_minus_best_classical": 0.013530642725527287,
+      "nmse_upair5g": 0.06168029550462961
     }
   ]
 }
