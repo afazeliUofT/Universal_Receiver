@@ -1,0 +1,7 @@
+metric,ebno_db,best_non_upair_receiver,best_non_upair_value,upair_value,gain_factor_best_non_upair_over_upair
+ber,4.0,baseline_ddcpe_ls_lmmse,0.0,0.0059121623635292,1.691428513818861e-10
+ber,8.0,baseline_ls_lmmse,0.0,0.0,1.0
+bler,4.0,baseline_ddcpe_ls_lmmse,0.0,0.0625,1.6e-11
+bler,8.0,baseline_ls_lmmse,0.0,0.0,1.0
+nmse,4.0,paper_cfgres_phaseaware_ls_lmmse,0.0847049262374639,0.1182032655924558,0.7166039433251504
+nmse,8.0,baseline_ddcpe_ls_lmmse,0.0502791265025734,0.062829315662384,0.8002494690973625

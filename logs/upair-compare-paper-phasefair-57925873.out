@@ -1,0 +1,119 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCconfig        6)  ucx/1.14.1         11) flexiblas/3.3.1
+  2) gentoo/2023     7)  libfabric/1.18.0   12) blis/0.9.0
+  3) gcccore/.12.3   8)  pmix/4.2.4         13) StdEnv/2023
+  4) gcc/12.3        9)  ucc/1.2.0
+  5) hwloc/2.9.1     10) openmpi/4.1.5
+Identity-init LS regression passed.
+Checkpoint build/save/load regression passed.
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=16 batch_size=32 use_training_impairments=False
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=16 batch_size=32 use_training_impairments=True
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=16 batch_size=32 use_training_impairments=True
+Baseline forward passed: baseline_ls_lmmse
+Baseline forward passed: baseline_ls_timeavg_lmmse
+Baseline forward passed: baseline_ls_2dlmmse_lmmse
+Baseline forward passed: baseline_ddcpe_ls_lmmse
+Baseline forward passed: paper_cfgres_ls_lmmse
+/home/rsadve1/PROJECT/Universal_Receiver/venv_universal_receiver/lib/python3.10/site-packages/keras/src/layers/layer.py:1493: UserWarning: Layer 'paper_cfgres_phaseaware_ls_lmmse_estimator' looks like it has unbuilt state, but Keras is not able to trace the layer `call()` in order to build it automatically. Possible causes:
+1. The `call()` method of your layer may be crashing. Try to `__call__()` the layer eagerly on some test input first to see if it works. E.g. `x = np.random.random((3, 4)); y = layer(x)`
+2. If the `call()` method is correct, then you may need to implement the `def build(self, input_shape)` method on your layer. It should create all variables used by the layer (e.g. by calling `layer.build()` on all its children layers).
+Exception encountered: ''Could not parse estimator inputs.''
+  warnings.warn(
+/home/rsadve1/PROJECT/Universal_Receiver/venv_universal_receiver/lib/python3.10/site-packages/keras/src/layers/layer.py:421: UserWarning: `build()` was called on layer 'paper_cfgres_phaseaware_ls_lmmse_estimator', however the layer does not have a `build()` method implemented and it looks like it has unbuilt state. This will cause the layer to be marked as built, despite not being actually built, which may cause failures down the line. Make sure to implement a proper `build()` method.
+  warnings.warn(
+Baseline forward passed: paper_cfgres_phaseaware_ls_lmmse
+Baseline forward passed: upair5g_lmmse
+Baseline forward passed: perfect_csi_lmmse
+Richer-baselines regression passed.
+Phase-aware identity/build regression passed.
+Paper configured-reservoir regression passed.
+/home/rsadve1/PROJECT/Universal_Receiver/venv_universal_receiver/lib/python3.10/site-packages/keras/src/layers/layer.py:1493: UserWarning: Layer 'paper_cfgres_phaseaware_ls_lmmse_estimator' looks like it has unbuilt state, but Keras is not able to trace the layer `call()` in order to build it automatically. Possible causes:
+1. The `call()` method of your layer may be crashing. Try to `__call__()` the layer eagerly on some test input first to see if it works. E.g. `x = np.random.random((3, 4)); y = layer(x)`
+2. If the `call()` method is correct, then you may need to implement the `def build(self, input_shape)` method on your layer. It should create all variables used by the layer (e.g. by calling `layer.build()` on all its children layers).
+Exception encountered: ''Could not parse estimator inputs.''
+  warnings.warn(
+/home/rsadve1/PROJECT/Universal_Receiver/venv_universal_receiver/lib/python3.10/site-packages/keras/src/layers/layer.py:421: UserWarning: `build()` was called on layer 'paper_cfgres_phaseaware_ls_lmmse_estimator', however the layer does not have a `build()` method implemented and it looks like it has unbuilt state. This will cause the layer to be marked as built, despite not being actually built, which may cause failures down the line. Make sure to implement a proper `build()` method.
+  warnings.warn(
+Phase-aware paper configured-reservoir regression passed.
+/home/rsadve1/PROJECT/Universal_Receiver/venv_universal_receiver/lib/python3.10/site-packages/keras/src/layers/layer.py:1493: UserWarning: Layer 'paper_cfgres_phaseaware_ls_lmmse_estimator' looks like it has unbuilt state, but Keras is not able to trace the layer `call()` in order to build it automatically. Possible causes:
+1. The `call()` method of your layer may be crashing. Try to `__call__()` the layer eagerly on some test input first to see if it works. E.g. `x = np.random.random((3, 4)); y = layer(x)`
+2. If the `call()` method is correct, then you may need to implement the `def build(self, input_shape)` method on your layer. It should create all variables used by the layer (e.g. by calling `layer.build()` on all its children layers).
+Exception encountered: ''Could not parse estimator inputs.''
+  warnings.warn(
+/home/rsadve1/PROJECT/Universal_Receiver/venv_universal_receiver/lib/python3.10/site-packages/keras/src/layers/layer.py:421: UserWarning: `build()` was called on layer 'paper_cfgres_phaseaware_ls_lmmse_estimator', however the layer does not have a `build()` method implemented and it looks like it has unbuilt state. This will cause the layer to be marked as built, despite not being actually built, which may cause failures down the line. Make sure to implement a proper `build()` method.
+  warnings.warn(
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 0.0 dB BER=1.44076e-02 BLER=1.01172e-01 NMSE=2.00666e-01
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 0.0 dB BER=1.44030e-02 BLER=1.01172e-01 NMSE=2.00666e-01
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 0.0 dB BER=1.76858e-01 BLER=8.88021e-01 NMSE=5.77801e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 0.0 dB BER=1.25582e-02 BLER=8.98438e-02 NMSE=1.97128e-01
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0= 0.0 dB BER=3.08351e-02 BLER=2.19401e-01 NMSE=2.60353e-01
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 0.0 dB BER=3.85978e-03 BLER=3.84115e-02 NMSE=1.48858e-01
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 0.0 dB BER=6.58426e-04 BLER=3.64583e-03 NMSE=5.77927e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 0.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 2.0 dB BER=7.68774e-03 BLER=4.64844e-02 NMSE=1.54326e-01
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 2.0 dB BER=7.68368e-03 BLER=4.64844e-02 NMSE=1.54326e-01
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 2.0 dB BER=1.36256e-01 BLER=7.13932e-01 NMSE=5.48615e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 2.0 dB BER=6.32632e-03 BLER=3.78906e-02 NMSE=1.47334e-01
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0= 2.0 dB BER=2.40031e-02 BLER=1.43359e-01 NMSE=2.54520e-01
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 2.0 dB BER=1.85214e-03 BLER=1.56250e-02 NMSE=1.27008e-01
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 2.0 dB BER=1.56961e-04 BLER=7.81250e-04 NMSE=4.03431e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 2.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 4.0 dB BER=5.09622e-03 BLER=3.11198e-02 NMSE=1.24929e-01
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 4.0 dB BER=5.10441e-03 BLER=3.08594e-02 NMSE=1.24929e-01
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 4.0 dB BER=1.11916e-01 BLER=5.77865e-01 NMSE=5.23803e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 4.0 dB BER=3.50878e-03 BLER=2.23958e-02 NMSE=1.13783e-01
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0= 4.0 dB BER=2.05292e-02 BLER=1.09375e-01 NMSE=2.51924e-01
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 4.0 dB BER=7.52525e-04 BLER=5.72917e-03 NMSE=1.12345e-01
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 4.0 dB BER=4.48074e-05 BLER=6.51042e-04 NMSE=3.02847e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 6.0 dB BER=3.72509e-03 BLER=3.08594e-02 NMSE=1.06282e-01
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 6.0 dB BER=3.76170e-03 BLER=3.08594e-02 NMSE=1.06282e-01
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 6.0 dB BER=9.56552e-02 BLER=4.84635e-01 NMSE=5.07676e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 6.0 dB BER=2.09072e-03 BLER=1.94010e-02 NMSE=9.16356e-02
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0= 6.0 dB BER=1.94997e-02 BLER=1.01432e-01 NMSE=2.52552e-01
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 6.0 dB BER=3.85174e-04 BLER=4.16667e-03 NMSE=1.02568e-01
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 6.0 dB BER=6.75784e-05 BLER=5.20833e-04 NMSE=2.38598e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 6.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 8.0 dB BER=3.88162e-03 BLER=4.08854e-02 NMSE=9.29467e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 8.0 dB BER=3.86307e-03 BLER=4.06250e-02 NMSE=9.29467e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 8.0 dB BER=8.22102e-02 BLER=4.16536e-01 NMSE=4.93232e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 8.0 dB BER=2.20024e-03 BLER=2.68229e-02 NMSE=7.64875e-02
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0= 8.0 dB BER=1.84310e-02 BLER=1.17839e-01 NMSE=2.49985e-01
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 8.0 dB BER=3.33369e-04 BLER=8.20313e-03 NMSE=9.52585e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 8.0 dB BER=5.54004e-05 BLER=2.60417e-04 NMSE=1.96445e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=10.0 dB BER=3.91031e-03 BLER=5.55990e-02 NMSE=8.53132e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0=10.0 dB BER=3.92976e-03 BLER=5.55990e-02 NMSE=8.53132e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=10.0 dB BER=7.68114e-02 BLER=4.19401e-01 NMSE=4.84872e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=10.0 dB BER=2.23047e-03 BLER=3.24219e-02 NMSE=6.78988e-02
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0=10.0 dB BER=1.94010e-02 BLER=1.34505e-01 NMSE=2.51314e-01
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0=10.0 dB BER=6.63374e-04 BLER=1.48437e-02 NMSE=9.15649e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0=10.0 dB BER=6.62640e-05 BLER=3.90625e-04 NMSE=1.69248e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=10.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=12.0 dB BER=4.41916e-03 BLER=6.69271e-02 NMSE=8.03927e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0=12.0 dB BER=4.41854e-03 BLER=6.70573e-02 NMSE=8.03927e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=12.0 dB BER=7.03963e-02 BLER=4.34115e-01 NMSE=4.72779e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=12.0 dB BER=2.17589e-03 BLER=3.54167e-02 NMSE=6.25310e-02
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0=12.0 dB BER=2.34273e-02 BLER=1.79167e-01 NMSE=2.52709e-01
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0=12.0 dB BER=8.02668e-04 BLER=1.88802e-02 NMSE=8.94540e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0=12.0 dB BER=5.68695e-05 BLER=3.90625e-04 NMSE=1.51277e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=12.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=14.0 dB BER=5.29006e-03 BLER=8.84115e-02 NMSE=7.76832e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0=14.0 dB BER=5.28538e-03 BLER=8.85417e-02 NMSE=7.76832e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=14.0 dB BER=6.87454e-02 BLER=4.73047e-01 NMSE=4.62012e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=14.0 dB BER=2.78498e-03 BLER=4.29688e-02 NMSE=5.94328e-02
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0=14.0 dB BER=2.47258e-02 BLER=2.07552e-01 NMSE=2.55446e-01
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0=14.0 dB BER=1.10925e-03 BLER=2.72135e-02 NMSE=8.83289e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0=14.0 dB BER=6.10062e-05 BLER=5.20833e-04 NMSE=1.38042e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=14.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=16.0 dB BER=6.38605e-03 BLER=9.53125e-02 NMSE=7.56456e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0=16.0 dB BER=6.33065e-03 BLER=9.53125e-02 NMSE=7.56456e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=16.0 dB BER=6.09886e-02 BLER=4.69792e-01 NMSE=4.45337e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=16.0 dB BER=3.12226e-03 BLER=4.90885e-02 NMSE=5.74779e-02
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0=16.0 dB BER=2.77155e-02 BLER=2.59896e-01 NMSE=2.65507e-01
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0=16.0 dB BER=1.52875e-03 BLER=3.34635e-02 NMSE=8.87041e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0=16.0 dB BER=1.03185e-04 BLER=7.81250e-04 NMSE=1.33295e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=16.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+{'eval': {'output_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility_paper_phasefair_comparison', 'curves_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility_paper_phasefair_comparison/metrics/curves.csv', 'summary_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility_paper_phasefair_comparison/metrics/evaluation_summary.json'}, 'plots': {'plots_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility_paper_phasefair_comparison/plots'}}

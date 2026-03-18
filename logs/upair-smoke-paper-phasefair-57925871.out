@@ -1,0 +1,63 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCconfig        6)  ucx/1.14.1         11) flexiblas/3.3.1
+  2) gentoo/2023     7)  libfabric/1.18.0   12) blis/0.9.0
+  3) gcccore/.12.3   8)  pmix/4.2.4         13) StdEnv/2023
+  4) gcc/12.3        9)  ucc/1.2.0
+  5) hwloc/2.9.1     10) openmpi/4.1.5
+Identity-init LS regression passed.
+Checkpoint build/save/load regression passed.
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=4 batch_size=8 use_training_impairments=False
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=4 batch_size=8 use_training_impairments=True
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=4 batch_size=8 use_training_impairments=True
+Baseline forward passed: baseline_ls_lmmse
+Baseline forward passed: baseline_ls_timeavg_lmmse
+Baseline forward passed: baseline_ls_2dlmmse_lmmse
+Baseline forward passed: baseline_ddcpe_ls_lmmse
+Baseline forward passed: paper_cfgres_ls_lmmse
+/home/rsadve1/PROJECT/Universal_Receiver/venv_universal_receiver/lib/python3.10/site-packages/keras/src/layers/layer.py:1493: UserWarning: Layer 'paper_cfgres_phaseaware_ls_lmmse_estimator' looks like it has unbuilt state, but Keras is not able to trace the layer `call()` in order to build it automatically. Possible causes:
+1. The `call()` method of your layer may be crashing. Try to `__call__()` the layer eagerly on some test input first to see if it works. E.g. `x = np.random.random((3, 4)); y = layer(x)`
+2. If the `call()` method is correct, then you may need to implement the `def build(self, input_shape)` method on your layer. It should create all variables used by the layer (e.g. by calling `layer.build()` on all its children layers).
+Exception encountered: ''Could not parse estimator inputs.''
+  warnings.warn(
+/home/rsadve1/PROJECT/Universal_Receiver/venv_universal_receiver/lib/python3.10/site-packages/keras/src/layers/layer.py:421: UserWarning: `build()` was called on layer 'paper_cfgres_phaseaware_ls_lmmse_estimator', however the layer does not have a `build()` method implemented and it looks like it has unbuilt state. This will cause the layer to be marked as built, despite not being actually built, which may cause failures down the line. Make sure to implement a proper `build()` method.
+  warnings.warn(
+Baseline forward passed: paper_cfgres_phaseaware_ls_lmmse
+Baseline forward passed: upair5g_lmmse
+Baseline forward passed: perfect_csi_lmmse
+Richer-baselines regression passed.
+Phase-aware identity/build regression passed.
+Paper configured-reservoir regression passed.
+/home/rsadve1/PROJECT/Universal_Receiver/venv_universal_receiver/lib/python3.10/site-packages/keras/src/layers/layer.py:1493: UserWarning: Layer 'paper_cfgres_phaseaware_ls_lmmse_estimator' looks like it has unbuilt state, but Keras is not able to trace the layer `call()` in order to build it automatically. Possible causes:
+1. The `call()` method of your layer may be crashing. Try to `__call__()` the layer eagerly on some test input first to see if it works. E.g. `x = np.random.random((3, 4)); y = layer(x)`
+2. If the `call()` method is correct, then you may need to implement the `def build(self, input_shape)` method on your layer. It should create all variables used by the layer (e.g. by calling `layer.build()` on all its children layers).
+Exception encountered: ''Could not parse estimator inputs.''
+  warnings.warn(
+/home/rsadve1/PROJECT/Universal_Receiver/venv_universal_receiver/lib/python3.10/site-packages/keras/src/layers/layer.py:421: UserWarning: `build()` was called on layer 'paper_cfgres_phaseaware_ls_lmmse_estimator', however the layer does not have a `build()` method implemented and it looks like it has unbuilt state. This will cause the layer to be marked as built, despite not being actually built, which may cause failures down the line. Make sure to implement a proper `build()` method.
+  warnings.warn(
+Phase-aware paper configured-reservoir regression passed.
+/home/rsadve1/PROJECT/Universal_Receiver/venv_universal_receiver/lib/python3.10/site-packages/keras/src/layers/layer.py:1493: UserWarning: Layer 'paper_cfgres_phaseaware_ls_lmmse_estimator' looks like it has unbuilt state, but Keras is not able to trace the layer `call()` in order to build it automatically. Possible causes:
+1. The `call()` method of your layer may be crashing. Try to `__call__()` the layer eagerly on some test input first to see if it works. E.g. `x = np.random.random((3, 4)); y = layer(x)`
+2. If the `call()` method is correct, then you may need to implement the `def build(self, input_shape)` method on your layer. It should create all variables used by the layer (e.g. by calling `layer.build()` on all its children layers).
+Exception encountered: ''Could not parse estimator inputs.''
+  warnings.warn(
+/home/rsadve1/PROJECT/Universal_Receiver/venv_universal_receiver/lib/python3.10/site-packages/keras/src/layers/layer.py:421: UserWarning: `build()` was called on layer 'paper_cfgres_phaseaware_ls_lmmse_estimator', however the layer does not have a `build()` method implemented and it looks like it has unbuilt state. This will cause the layer to be marked as built, despite not being actually built, which may cause failures down the line. Make sure to implement a proper `build()` method.
+  warnings.warn(
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 4.0 dB BER=4.47635e-03 BLER=6.25000e-02 NMSE=1.20163e-01
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 4.0 dB BER=4.47635e-03 BLER=6.25000e-02 NMSE=1.20163e-01
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 4.0 dB BER=5.92061e-02 BLER=3.75000e-01 NMSE=2.70789e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.12177e-01
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0= 4.0 dB BER=8.06588e-03 BLER=6.25000e-02 NMSE=1.56159e-01
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=8.47049e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 4.0 dB BER=5.91216e-03 BLER=6.25000e-02 NMSE=1.18203e-01
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=6.38736e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=6.38736e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 8.0 dB BER=2.19595e-02 BLER=1.25000e-01 NMSE=2.41512e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=5.02791e-02
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.45185e-01
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=5.34987e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=6.28293e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+{'eval': {'output_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc_paper_phasefair_comparison', 'curves_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc_paper_phasefair_comparison/metrics/curves.csv', 'summary_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc_paper_phasefair_comparison/metrics/evaluation_summary.json'}, 'plots': {'plots_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/smoke_upair_cdlc_paper_phasefair_comparison/plots'}}
