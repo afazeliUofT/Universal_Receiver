@@ -1,0 +1,170 @@
+experiment:
+  name: upair_cdlc_highmobility_paper_phasefair_cleancontrol
+  output_root: outputs
+system:
+  seed: 7
+  precision: single
+  batch_size_train: 32
+  batch_size_eval: 64
+  ebno_db_train_min: 0.0
+  ebno_db_train_max: 16.0
+  ebno_db_eval:
+  - 0
+  - 2
+  - 4
+  - 6
+  - 8
+  - 10
+  - 12
+  - 14
+  - 16
+pusch:
+  carrier_frequency_hz: 3.5e9
+  subcarrier_spacing_khz: 30
+  n_size_grid: 16
+  n_size_bwp: 16
+  cyclic_prefix: normal
+  mapping_type: A
+  symbol_allocation:
+  - 0
+  - 14
+  num_layers: 1
+  num_antenna_ports: 1
+  precoding: non-codebook
+  transform_precoding: false
+  mcs_index: 10
+  mcs_table: qam64
+  dmrs:
+    config_type: 1
+    length: 1
+    additional_position: 0
+    type_a_position: 2
+    num_cdm_groups_without_data: 2
+channel:
+  model: C
+  delay_spread_s: 3.0e-07
+  min_speed_mps: 22.22
+  max_speed_mps: 38.89
+  num_rx_ant: 4
+  num_tx_ant: 1
+  normalize_channel: true
+impairments:
+  enabled: false
+  train:
+    cpe_sigma_rad: 0.03
+    slope_range_rad:
+    - -0.2
+    - 0.2
+    rw_sigma_rad: 0.015
+  eval:
+    cpe_sigma_rad: 0.04
+    slope_rad: 0.16
+    rw_sigma_rad: 0.02
+model:
+  d_model: 96
+  num_blocks: 4
+  num_heads: 4
+  mlp_ratio: 2.0
+  dropout: 0.05
+  residual_scale: 0.35
+  use_noise_feature: true
+  use_pilot_mask_feature: true
+training:
+  steps: 3000
+  val_steps: 64
+  log_every: 100
+  eval_every: 250
+  learning_rate: 0.0003
+  weight_decay: 1.0e-05
+  nmse_loss_weight: 0.1
+  grad_clip_norm: 1.0
+  checkpoint_name: best.weights.h5
+evaluation:
+  num_batches_per_point: 120
+  save_example_batch: true
+baselines:
+  enabled_receivers:
+  - baseline_ls_lmmse
+  - baseline_ls_timeavg_lmmse
+  - baseline_ls_2dlmmse_lmmse
+  - baseline_ddcpe_ls_lmmse
+  - paper_cfgres_ls_lmmse
+  - paper_cfgres_phaseaware_ls_lmmse
+  - upair5g_lmmse
+  - perfect_csi_lmmse
+  covariance_estimation:
+    cache_name: empirical_covariances.npz
+    reuse_cache: true
+    num_batches: 16
+    batch_size: 32
+    order: f-t-s
+    use_spatial_smoothing: true
+    use_training_impairments: false
+    diagonal_loading: 0.0001
+    normalize_trace: false
+  phase_aware_ddcpe:
+    num_iterations: 2
+    smoothing_kernel:
+    - 1.0
+    - 2.0
+    - 3.0
+    - 2.0
+    - 1.0
+    weight_power: 1.0
+    max_abs_residual_rad: 0.6
+    anchor_to_dmrs: true
+  paper_configured_reservoir:
+    covariance_cache_name: paper_cfgres_covariances.npz
+    basis_artifact_name: paper_cfgres_basis.npz
+    reuse_cache: true
+    use_impairment_aware_covariance: true
+    num_batches: 16
+    batch_size: 32
+    diagonal_loading: 0.0001
+    normalize_trace: false
+    order: f-t-s
+    use_spatial_smoothing: true
+    time_rank: 6
+    freq_rank: 10
+    freq_extra_dct_modes: 4
+    time_extra_phase_slopes_rad:
+    - -0.24
+    - -0.12
+    - 0.0
+    - 0.12
+    - 0.24
+    extra_mode_prior_scale: 0.2
+    min_prior_var: 0.0001
+    posterior_jitter: 1.0e-05
+    pilot_weight: 1.0
+    ls_blend: 0.08
+    err_inflation: 1.0
+  paper_configured_reservoir_phasefair:
+    covariance_cache_name: paper_cfgres_phasefair_covariances.npz
+    basis_artifact_name: paper_cfgres_phasefair_basis.npz
+    reuse_cache: true
+    use_impairment_aware_covariance: true
+    num_batches: 16
+    batch_size: 32
+    diagonal_loading: 0.0001
+    normalize_trace: false
+    order: f-t-s
+    use_spatial_smoothing: true
+    time_rank: 6
+    freq_rank: 10
+    freq_extra_dct_modes: 4
+    time_extra_phase_slopes_rad:
+    - -0.24
+    - -0.12
+    - 0.0
+    - 0.12
+    - 0.24
+    extra_mode_prior_scale: 0.2
+    min_prior_var: 0.0001
+    posterior_jitter: 1.0e-05
+    pilot_weight: 1.0
+    ls_blend: 0.55
+    err_inflation: 1.0
+    phase_precondition_with_ddcpe: true
+    anchor_ratio_phase_to_dmrs: true
+    max_relative_residual_power: 0.35
