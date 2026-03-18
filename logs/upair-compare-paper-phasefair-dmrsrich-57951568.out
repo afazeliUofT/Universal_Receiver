@@ -1,0 +1,100 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCconfig        6)  ucx/1.14.1         11) flexiblas/3.3.1
+  2) gentoo/2023     7)  libfabric/1.18.0   12) blis/0.9.0
+  3) gcccore/.12.3   8)  pmix/4.2.4         13) StdEnv/2023
+  4) gcc/12.3        9)  ucc/1.2.0
+  5) hwloc/2.9.1     10) openmpi/4.1.5
+Identity-init LS regression passed.
+Checkpoint build/save/load regression passed.
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=16 batch_size=32 use_training_impairments=False
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=16 batch_size=32 use_training_impairments=True
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=16 batch_size=32 use_training_impairments=True
+Baseline forward passed: baseline_ls_lmmse
+Baseline forward passed: baseline_ls_timeavg_lmmse
+Baseline forward passed: baseline_ls_2dlmmse_lmmse
+Baseline forward passed: baseline_ddcpe_ls_lmmse
+Baseline forward passed: paper_cfgres_ls_lmmse
+Baseline forward passed: paper_cfgres_phaseaware_ls_lmmse
+Baseline forward passed: upair5g_lmmse
+Baseline forward passed: perfect_csi_lmmse
+Richer-baselines regression passed.
+Phase-aware identity/build regression passed.
+Paper configured-reservoir regression passed.
+Phase-aware paper configured-reservoir regression passed.
+Phase-aware paper comparator warning-free regression passed.
+[CONTROL] Running DMRS-rich-control evaluation with the existing trained UPAIR checkpoint.
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 0.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.30298e-01
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 0.0 dB BER=2.84831e-05 BLER=9.11458e-04 NMSE=1.03913e-01
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 0.0 dB BER=1.28075e-01 BLER=7.02865e-01 NMSE=5.01211e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 0.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.30384e-01
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0= 0.0 dB BER=5.98606e-05 BLER=1.82292e-03 NMSE=7.36852e-02
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 0.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=7.40499e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 0.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=9.13481e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 0.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 2.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=8.39523e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 2.0 dB BER=4.19486e-08 BLER=1.30208e-04 NMSE=7.83943e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 2.0 dB BER=8.47788e-02 BLER=4.81250e-01 NMSE=4.69962e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 2.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=8.38884e-02
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0= 2.0 dB BER=8.66657e-05 BLER=1.43229e-03 NMSE=6.41843e-02
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 2.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=5.27237e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 2.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=5.83410e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 2.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=5.46531e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 4.0 dB BER=8.80920e-07 BLER=1.30208e-04 NMSE=6.24773e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 4.0 dB BER=6.11995e-02 BLER=3.44141e-01 NMSE=4.43274e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=5.44236e-02
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0= 4.0 dB BER=8.20514e-05 BLER=1.04167e-03 NMSE=5.82901e-02
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=3.91436e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=3.86189e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 4.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 6.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=3.62799e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 6.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=5.26942e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 6.0 dB BER=4.24717e-02 BLER=2.34896e-01 NMSE=4.22150e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 6.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=3.59596e-02
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0= 6.0 dB BER=5.29810e-05 BLER=7.81250e-04 NMSE=5.54264e-02
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 6.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=3.08773e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 6.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=2.62702e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 6.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=2.46070e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0= 8.0 dB BER=2.51691e-07 BLER=5.20833e-04 NMSE=4.57154e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 8.0 dB BER=3.27043e-02 BLER=1.98568e-01 NMSE=4.11204e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=2.42594e-02
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0= 8.0 dB BER=3.74601e-05 BLER=1.17187e-03 NMSE=5.30642e-02
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=2.54560e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.85322e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 8.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=10.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.72478e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0=10.0 dB BER=6.29228e-07 BLER=1.17187e-03 NMSE=4.12802e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=10.0 dB BER=3.21235e-02 BLER=2.41536e-01 NMSE=3.98628e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=10.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.68872e-02
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0=10.0 dB BER=1.76184e-06 BLER=2.34375e-03 NMSE=5.26408e-02
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0=10.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=2.23622e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0=10.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.37124e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=10.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=12.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.26217e-02
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0=12.0 dB BER=4.40460e-06 BLER=6.25000e-03 NMSE=3.93414e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=12.0 dB BER=2.95780e-02 BLER=2.86849e-01 NMSE=3.85097e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=12.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.22568e-02
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0=12.0 dB BER=1.34235e-06 BLER=2.47396e-03 NMSE=5.19382e-02
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0=12.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=2.03637e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0=12.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.06168e-02
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=12.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=14.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=9.72857e-03
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0=14.0 dB BER=9.73207e-06 BLER=1.39323e-02 NMSE=3.80895e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=14.0 dB BER=3.17579e-02 BLER=3.40104e-01 NMSE=3.73441e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=14.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=9.36998e-03
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0=14.0 dB BER=1.49337e-05 BLER=5.46875e-03 NMSE=5.33523e-02
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0=14.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=1.98370e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0=14.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=8.69909e-03
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=14.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=16.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=7.88095e-03
+[EVAL] receiver=baseline_ls_timeavg_lmmse Eb/N0=16.0 dB BER=1.54790e-05 BLER=2.18750e-02 NMSE=3.66454e-02
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=16.0 dB BER=3.03908e-02 BLER=3.73177e-01 NMSE=3.58557e-01
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=16.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=7.50793e-03
+[EVAL] receiver=   paper_cfgres_ls_lmmse Eb/N0=16.0 dB BER=9.76982e-05 BLER=8.07292e-03 NMSE=5.65519e-02
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0=16.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=2.04291e-02
+[EVAL] receiver=           upair5g_lmmse Eb/N0=16.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=7.42566e-03
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=16.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00
+{'eval': {'output_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility_paper_phasefair_dmrsrich', 'curves_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility_paper_phasefair_dmrsrich/metrics/curves.csv', 'summary_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility_paper_phasefair_dmrsrich/metrics/evaluation_summary.json'}, 'plots': {'plots_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/upair_cdlc_highmobility_paper_phasefair_dmrsrich/plots'}}
