@@ -1,0 +1,9 @@
+Only if you rerun the new robustness-control jobs after a stale/failed attempt, remove:
+- `outputs/upair_cdlc_highmobility_paper_phasefair_cleancontrol/`
+- `outputs/upair_cdlc_highmobility_paper_phasefair_dmrsrich/`
+- `outputs/publication_robustness_summary/`
+- `logs/upair-compare-paper-phasefair-cleancontrol-*.out`
+- `logs/upair-compare-paper-phasefair-dmrsrich-*.out`
+- `logs/upair-publication-robustness-*.out`
+
+Keep all old smoke/full/richer/phase-aware/paper-phasefair logs and outputs.
