@@ -1,0 +1,6 @@
+Remove only if you want a clean rerun of the new final TWC mild-scenario campaign:
+- outputs/twc_mild_main/
+- outputs/twc_mild_clean/
+- outputs/twc_mild_dmrsrich/
+- TWC_plots/
+- logs/upair-twc-*.out
