@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --job-name=upair-twc-main
 #SBATCH --account=def-rsadve
-#SBATCH --time=48:00:00
-#SBATCH --cpus-per-task=4
+#SBATCH --time=30:00:00
+#SBATCH --cpus-per-task=8
 #SBATCH --mem=32G
 #SBATCH --gpus-per-node=1
 #SBATCH --output=/home/rsadve1/PROJECT/Universal_Receiver/logs/%x-%j.out
