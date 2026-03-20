@@ -1,20 +1,23 @@
-Overwrite no existing source file.
-
-Add these new files:
+Overwrite these existing files:
+- src/upair5g/evaluation.py
+- scripts/make_twc_plots.py
 - configs/twc_mild_main.yaml
 - configs/twc_mild_clean.yaml
 - configs/twc_mild_dmrsrich.yaml
-- scripts/run_twc_mild_main_full.sh
-- scripts/run_twc_mild_clean_full.sh
-- scripts/run_twc_mild_dmrsrich_full.sh
-- scripts/run_make_twc_plots.sh
-- scripts/make_twc_plots.py
-- scripts/cleanup_twc_final_rerun.sh
 - slurm/twc_mild_main_full.slurm
 - slurm/twc_mild_clean_full.slurm
 - slurm/twc_mild_dmrsrich_full.slurm
-- slurm/twc_make_plots.slurm
-- docs/TWC_FINAL_MILD_SCENARIOS.md
-- REMOVE_ONLY_IF_RERUN_TWC_FINAL.txt
 
-Remove nothing.
+Add these new files:
+- scripts/cleanup_twc_natural_rerun.sh
+- docs/TWC_NATURAL_CURVES_REFINEMENT.md
+- FILE_ACTIONS.md
+
+Remove nothing from code.
+
+Only if you are rerunning the refined mild campaign, remove:
+- TWC_plots/
+- outputs/twc_mild_main/
+- outputs/twc_mild_clean/
+- outputs/twc_mild_dmrsrich/
+- old logs/upair-twc-*.out
