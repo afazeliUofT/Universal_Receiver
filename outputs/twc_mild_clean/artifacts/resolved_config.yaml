@@ -10,15 +10,20 @@ system:
   ebno_db_train_max: 18.0
   ebno_db_eval:
   - 0
+  - 1
   - 2
+  - 3
   - 4
+  - 5
   - 6
+  - 7
   - 8
+  - 9
   - 10
+  - 11
   - 12
+  - 13
   - 14
-  - 16
-  - 18
 pusch:
   carrier_frequency_hz: 3.5e9
   subcarrier_spacing_khz: 30
@@ -46,7 +51,7 @@ channel:
   delay_spread_s: 3.0e-07
   min_speed_mps: 8.33
   max_speed_mps: 16.67
-  num_rx_ant: 4
+  num_rx_ant: 2
   num_tx_ant: 1
   normalize_channel: true
 impairments:
@@ -71,7 +76,7 @@ model:
   use_noise_feature: true
   use_pilot_mask_feature: true
 training:
-  steps: 4500
+  steps: 5000
   val_steps: 96
   log_every: 100
   eval_every: 250
@@ -81,7 +86,17 @@ training:
   grad_clip_norm: 1.0
   checkpoint_name: best.weights.h5
 evaluation:
-  num_batches_per_point: 512
+  num_batches_per_point: 1024
+  min_num_batches_per_point: 256
+  max_num_batches_per_point: 1024
+  target_block_errors_per_receiver: 100
+  stopping_receivers:
+  - baseline_ls_lmmse
+  - baseline_ddcpe_ls_lmmse
+  - paper_cfgres_phaseaware_ls_lmmse
+  - upair5g_lmmse
+  reliable_min_block_errors: 20
+  reliable_min_bit_errors: 100
   save_example_batch: true
 baselines:
   enabled_receivers:
