@@ -1,0 +1,97 @@
+Baseline forward passed: baseline_ls_lmmse
+Baseline forward passed: baseline_ddcpe_ls_lmmse
+Baseline forward passed: paper_cfgres_phaseaware_ls_lmmse
+Baseline forward passed: upair5g_lmmse
+Baseline forward passed: perfect_csi_lmmse
+Richer-baselines regression passed.
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 0.0 dB BER=1.78270e-01 BLER=1.00000e+00 NMSE=1.43120e-01 bit_err=26357098/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 0.0 dB BER=2.65682e-01 BLER=1.00000e+00 NMSE=5.03451e-01 bit_err=39280881/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 0.0 dB BER=1.78139e-01 BLER=1.00000e+00 NMSE=1.42680e-01 bit_err=26337703/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 0.0 dB BER=1.74549e-01 BLER=1.00000e+00 NMSE=1.07593e-01 bit_err=25806955/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 0.0 dB BER=1.60285e-01 BLER=1.00000e+00 NMSE=2.90074e-02 bit_err=23698057/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 0.0 dB BER=1.50165e-01 BLER=1.00000e+00 NMSE=0.00000e+00 bit_err=22201708/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 1.0 dB BER=1.54932e-01 BLER=1.00000e+00 NMSE=1.16760e-01 bit_err=22906582/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 1.0 dB BER=2.50283e-01 BLER=1.00000e+00 NMSE=4.89287e-01 bit_err=37004136/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 1.0 dB BER=1.54645e-01 BLER=1.00000e+00 NMSE=1.15980e-01 bit_err=22864150/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 1.0 dB BER=1.52924e-01 BLER=1.00000e+00 NMSE=9.61344e-02 bit_err=22609664/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 1.0 dB BER=1.35616e-01 BLER=1.00000e+00 NMSE=2.28207e-02 bit_err=20050757/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 1.0 dB BER=1.23977e-01 BLER=1.00000e+00 NMSE=0.00000e+00 bit_err=18329933/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 2.0 dB BER=1.29422e-01 BLER=1.00000e+00 NMSE=9.59281e-02 bit_err=19134883/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 2.0 dB BER=2.35620e-01 BLER=1.00000e+00 NMSE=4.76116e-01 bit_err=34836178/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 2.0 dB BER=1.28738e-01 BLER=1.00000e+00 NMSE=9.46212e-02 bit_err=19033808/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 2.0 dB BER=1.29461e-01 BLER=1.00000e+00 NMSE=8.69612e-02 bit_err=19140712/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 2.0 dB BER=1.04981e-01 BLER=1.00000e+00 NMSE=1.82886e-02 bit_err=15521350/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 2.0 dB BER=8.70571e-02 BLER=1.00000e+00 NMSE=0.00000e+00 bit_err=12871322/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 3.0 dB BER=9.63201e-02 BLER=1.00000e+00 NMSE=7.91759e-02 bit_err=14240852/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 3.0 dB BER=2.21863e-01 BLER=1.00000e+00 NMSE=4.63268e-01 bit_err=32802335/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 3.0 dB BER=9.44858e-02 BLER=1.00000e+00 NMSE=7.72536e-02 bit_err=13969658/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 3.0 dB BER=9.98284e-02 BLER=1.00000e+00 NMSE=7.95058e-02 bit_err=14759550/147849216 blk_err=24576/24576  batches= 256
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 3.0 dB BER=5.08130e-02 BLER=9.27490e-01 NMSE=1.48632e-02 bit_err=7512665/147849216 blk_err=22794/24576  batches= 256
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 3.0 dB BER=2.43641e-02 BLER=6.07707e-01 NMSE=0.00000e+00 bit_err=3602213/147849216 blk_err=14935/24576  batches= 256
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 4.0 dB BER=4.31535e-02 BLER=7.89469e-01 NMSE=6.58341e-02 bit_err=6380216/147849216 blk_err=19402/24576  batches= 256
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 4.0 dB BER=2.10571e-01 BLER=9.99471e-01 NMSE=4.53997e-01 bit_err=31132701/147849216 blk_err=24563/24576  batches= 256
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 4.0 dB BER=3.80372e-02 BLER=7.57161e-01 NMSE=6.31698e-02 bit_err=5623765/147849216 blk_err=18608/24576  batches= 256
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 4.0 dB BER=5.25841e-02 BLER=8.30200e-01 NMSE=7.34051e-02 bit_err=7774520/147849216 blk_err=20403/24576  batches= 256
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 4.0 dB BER=8.11592e-03 BLER=2.13989e-01 NMSE=1.22606e-02 bit_err=1199933/147849216 blk_err= 5259/24576  batches= 256
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 4.0 dB BER=2.60871e-03 BLER=8.06885e-02 NMSE=0.00000e+00 bit_err=385696/147849216 blk_err= 1983/24576  batches= 256
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 5.0 dB BER=1.07995e-02 BLER=2.48006e-01 NMSE=5.53242e-02 bit_err=1596691/147849216 blk_err= 6095/24576  batches= 256
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 5.0 dB BER=1.99998e-01 BLER=9.96134e-01 NMSE=4.44347e-01 bit_err=29569493/147849216 blk_err=24481/24576  batches= 256
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 5.0 dB BER=6.74206e-03 BLER=1.75700e-01 NMSE=5.18553e-02 bit_err=996808/147849216 blk_err= 4318/24576  batches= 256
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 5.0 dB BER=1.73053e-02 BLER=3.59172e-01 NMSE=6.85617e-02 bit_err=2558569/147849216 blk_err= 8827/24576  batches= 256
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 5.0 dB BER=9.13431e-04 BLER=2.68555e-02 NMSE=1.02768e-02 bit_err=135050/147849216 blk_err=  660/24576  batches= 256
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 5.0 dB BER=2.41692e-04 BLER=7.97526e-03 NMSE=0.00000e+00 bit_err= 35734/147849216 blk_err=  196/24576  batches= 256
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 6.0 dB BER=2.44234e-03 BLER=6.26452e-02 NMSE=4.69437e-02 bit_err=404825/165752832 blk_err= 1726/27552  batches= 287
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 6.0 dB BER=1.91895e-01 BLER=9.88313e-01 NMSE=4.37537e-01 bit_err=31807079/165752832 blk_err=27230/27552  batches= 287
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 6.0 dB BER=1.00889e-03 BLER=2.67131e-02 NMSE=4.26761e-02 bit_err=167226/165752832 blk_err=  736/27552  batches= 287
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 6.0 dB BER=4.93800e-03 BLER=1.17414e-01 NMSE=6.43690e-02 bit_err=818487/165752832 blk_err= 3235/27552  batches= 287
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 6.0 dB BER=1.09911e-04 BLER=3.62950e-03 NMSE=8.73580e-03 bit_err= 18218/165752832 blk_err=  100/27552  batches= 287
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 6.0 dB BER=1.73511e-05 BLER=7.62195e-04 NMSE=0.00000e+00 bit_err=  2876/165752832 blk_err=   21/27552  batches= 287
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 7.0 dB BER=6.20898e-04 BLER=1.56962e-02 NMSE=4.02986e-02 bit_err=367197/591396864 blk_err= 1543/98304  batches=1024
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 7.0 dB BER=1.85691e-01 BLER=9.76206e-01 NMSE=4.29828e-01 bit_err=109817063/591396864 blk_err=95965/98304  batches=1024
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 7.0 dB BER=1.43990e-04 BLER=4.38436e-03 NMSE=3.53313e-02 bit_err= 85155/591396864 blk_err=  431/98304  batches=1024
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 7.0 dB BER=1.47619e-03 BLER=3.63464e-02 NMSE=6.09648e-02 bit_err=873012/591396864 blk_err= 3573/98304  batches=1024
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 7.0 dB BER=9.69569e-06 BLER=4.17074e-04 NMSE=7.54513e-03 bit_err=  5734/591396864 blk_err=   41/98304  batches=1024
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 7.0 dB BER=1.06189e-06 BLER=6.10352e-05 NMSE=0.00000e+00 bit_err=   628/591396864 blk_err=    6/98304  batches=1024
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 8.0 dB BER=1.74076e-04 BLER=4.41488e-03 NMSE=3.50303e-02 bit_err=102948/591396864 blk_err=  434/98304  batches=1024
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 8.0 dB BER=1.80755e-01 BLER=9.62789e-01 NMSE=4.24113e-01 bit_err=106897776/591396864 blk_err=94646/98304  batches=1024
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 8.0 dB BER=3.59454e-05 BLER=8.95182e-04 NMSE=2.94905e-02 bit_err= 21258/591396864 blk_err=   88/98304  batches=1024
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 8.0 dB BER=5.03063e-04 BLER=1.25427e-02 NMSE=5.83446e-02 bit_err=297510/591396864 blk_err= 1233/98304  batches=1024
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 8.0 dB BER=1.33244e-06 BLER=6.10352e-05 NMSE=6.58351e-03 bit_err=   788/591396864 blk_err=    6/98304  batches=1024
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 8.0 dB BER=8.62365e-08 BLER=1.01725e-05 NMSE=0.00000e+00 bit_err=    51/591396864 blk_err=    1/98304  batches=1024
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0= 9.0 dB BER=6.11400e-05 BLER=1.43433e-03 NMSE=3.08979e-02 bit_err= 36158/591396864 blk_err=  141/98304  batches=1024
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0= 9.0 dB BER=1.76514e-01 BLER=9.50755e-01 NMSE=4.18163e-01 bit_err=104389637/591396864 blk_err=93463/98304  batches=1024
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0= 9.0 dB BER=8.36325e-06 BLER=2.54313e-04 NMSE=2.49458e-02 bit_err=  4946/591396864 blk_err=   25/98304  batches=1024
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0= 9.0 dB BER=2.73326e-04 BLER=5.88989e-03 NMSE=5.63366e-02 bit_err=161644/591396864 blk_err=  579/98304  batches=1024
+[EVAL] receiver=           upair5g_lmmse Eb/N0= 9.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=5.82466e-03 bit_err=     0/591396864 blk_err=    0/98304  batches=1024
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0= 9.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00 bit_err=     0/591396864 blk_err=    0/98304  batches=1024
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=10.0 dB BER=2.54347e-05 BLER=5.18799e-04 NMSE=2.74513e-02 bit_err= 15042/591396864 blk_err=   51/98304  batches=1024
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=10.0 dB BER=1.73037e-01 BLER=9.39830e-01 NMSE=4.13461e-01 bit_err=102333283/591396864 blk_err=92389/98304  batches=1024
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=10.0 dB BER=8.06227e-06 BLER=1.11898e-04 NMSE=2.12747e-02 bit_err=  4768/591396864 blk_err=   11/98304  batches=1024
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0=10.0 dB BER=1.54959e-04 BLER=3.00090e-03 NMSE=5.46087e-02 bit_err= 91642/591396864 blk_err=  295/98304  batches=1024
+[EVAL] receiver=           upair5g_lmmse Eb/N0=10.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=5.18180e-03 bit_err=     0/591396864 blk_err=    0/98304  batches=1024
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=10.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00 bit_err=     0/591396864 blk_err=    0/98304  batches=1024
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=11.0 dB BER=1.41631e-05 BLER=3.35693e-04 NMSE=2.48589e-02 bit_err=  8376/591396864 blk_err=   33/98304  batches=1024
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=11.0 dB BER=1.69815e-01 BLER=9.30522e-01 NMSE=4.08258e-01 bit_err=100427867/591396864 blk_err=91474/98304  batches=1024
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=11.0 dB BER=3.77242e-06 BLER=8.13802e-05 NMSE=1.84669e-02 bit_err=  2231/591396864 blk_err=    8/98304  batches=1024
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0=11.0 dB BER=9.38388e-05 BLER=1.63778e-03 NMSE=5.34280e-02 bit_err= 55496/591396864 blk_err=  161/98304  batches=1024
+[EVAL] receiver=           upair5g_lmmse Eb/N0=11.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=4.67331e-03 bit_err=     0/591396864 blk_err=    0/98304  batches=1024
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=11.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00 bit_err=     0/591396864 blk_err=    0/98304  batches=1024
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=12.0 dB BER=1.07390e-05 BLER=1.93278e-04 NMSE=2.27788e-02 bit_err=  6351/591396864 blk_err=   19/98304  batches=1024
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=12.0 dB BER=1.66952e-01 BLER=9.24052e-01 NMSE=4.02980e-01 bit_err=98734958/591396864 blk_err=90838/98304  batches=1024
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=12.0 dB BER=3.37675e-06 BLER=6.10352e-05 NMSE=1.62989e-02 bit_err=  1997/591396864 blk_err=    6/98304  batches=1024
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0=12.0 dB BER=7.98178e-05 BLER=1.43433e-03 NMSE=5.25247e-02 bit_err= 47204/591396864 blk_err=  141/98304  batches=1024
+[EVAL] receiver=           upair5g_lmmse Eb/N0=12.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=4.25606e-03 bit_err=     0/591396864 blk_err=    0/98304  batches=1024
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=12.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00 bit_err=     0/591396864 blk_err=    0/98304  batches=1024
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=13.0 dB BER=2.57188e-06 BLER=7.12077e-05 NMSE=2.11006e-02 bit_err=  1521/591396864 blk_err=    7/98304  batches=1024
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=13.0 dB BER=1.63557e-01 BLER=9.15497e-01 NMSE=3.95932e-01 bit_err=96727047/591396864 blk_err=89997/98304  batches=1024
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=13.0 dB BER=1.16504e-06 BLER=1.01725e-05 NMSE=1.45519e-02 bit_err=   689/591396864 blk_err=    1/98304  batches=1024
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0=13.0 dB BER=4.24419e-05 BLER=6.71387e-04 NMSE=5.17921e-02 bit_err= 25100/591396864 blk_err=   66/98304  batches=1024
+[EVAL] receiver=           upair5g_lmmse Eb/N0=13.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=3.90322e-03 bit_err=     0/591396864 blk_err=    0/98304  batches=1024
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=13.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00 bit_err=     0/591396864 blk_err=    0/98304  batches=1024
+[EVAL] receiver=       baseline_ls_lmmse Eb/N0=14.0 dB BER=3.51710e-06 BLER=1.01725e-04 NMSE=1.97016e-02 bit_err=  2080/591396864 blk_err=   10/98304  batches=1024
+[EVAL] receiver=baseline_ls_2dlmmse_lmmse Eb/N0=14.0 dB BER=1.60351e-01 BLER=9.10787e-01 NMSE=3.88274e-01 bit_err=94831251/591396864 blk_err=89534/98304  batches=1024
+[EVAL] receiver= baseline_ddcpe_ls_lmmse Eb/N0=14.0 dB BER=1.35780e-06 BLER=3.05176e-05 NMSE=1.31226e-02 bit_err=   803/591396864 blk_err=    3/98304  batches=1024
+[EVAL] receiver=paper_cfgres_phaseaware_ls_lmmse Eb/N0=14.0 dB BER=4.60046e-05 BLER=7.32422e-04 NMSE=5.13163e-02 bit_err= 27207/591396864 blk_err=   72/98304  batches=1024
+[EVAL] receiver=           upair5g_lmmse Eb/N0=14.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=3.59995e-03 bit_err=     0/591396864 blk_err=    0/98304  batches=1024
+[EVAL] receiver=       perfect_csi_lmmse Eb/N0=14.0 dB BER=0.00000e+00 BLER=0.00000e+00 NMSE=0.00000e+00 bit_err=     0/591396864 blk_err=    0/98304  batches=1024
+{'eval': {'output_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/twc_mild_clean', 'curves_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/twc_mild_clean/metrics/curves.csv', 'summary_path': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/twc_mild_clean/metrics/evaluation_summary.json'}, 'plots': {'plots_dir': '/home/rsadve1/PROJECT/Universal_Receiver/outputs/twc_mild_clean/plots'}}
