@@ -1,0 +1,43 @@
+2026-03-27 17:00:00.723975: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-03-27 17:00:11.954146: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1928] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38484 MB memory:  -> device: 0, name: NVIDIA A100-SXM4-40GB, pci bus id: 0000:01:00.0, compute capability: 8.0
+2026-03-27 17:00:29.819518: I tensorflow/core/util/cuda_solvers.cc:178] Creating GpuSolver handles for stream 0x560802a92810
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=24 batch_size=48 use_training_impairments=False
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=24 batch_size=48 use_training_impairments=False
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=24 batch_size=48 use_training_impairments=False
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=24 batch_size=48 use_training_impairments=False
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=24 batch_size=48 use_training_impairments=False
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=24 batch_size=48 use_training_impairments=False
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=24 batch_size=48 use_training_impairments=False
+[BASELINES] Estimating empirical LMMSE covariances with num_batches=24 batch_size=48 use_training_impairments=False
+====================================================================================================
+TWC2 LMMSE sanity probe
+====================================================================================================
+VARIANT=current_twc2 static_clean=False cache=probe_cov_current_twc2.npz
+  COV-T: {'dim': 14, 'min_eig': 0.0010045648086816072, 'max_eig': 13.920217514038086, 'mean_eig': 0.9999985913662905, 'trace': 13.999980279128067, 'cond_like': 13856.963128448631}
+  COV-F: {'dim': 192, 'min_eig': 0.000992649351246655, 'max_eig': 90.3979263305664, 'mean_eig': 0.9999997523906737, 'trace': 191.99995245900936, 'cond_like': 91067.33028842145}
+  SNR= 0.0 dB | LS-lin NMSE=1.4457e-01 power=1.1188 corr=0.9334 | LS-2D NMSE=5.1278e-01 power=0.4249 corr=0.6998
+  SNR= 6.0 dB | LS-lin NMSE=4.7765e-02 power=1.0200 corr=0.9766 | LS-2D NMSE=4.2884e-01 power=0.5013 corr=0.7577
+  SNR=10.0 dB | LS-lin NMSE=2.8194e-02 power=1.0025 corr=0.9861 | LS-2D NMSE=3.9163e-01 power=0.5401 corr=0.7817
+----------------------------------------------------------------------------------------------------
+VARIANT=no_trace_norm static_clean=False cache=probe_cov_no_trace_norm.npz
+  COV-T: {'dim': 14, 'min_eig': 0.00010592360922601074, 'max_eig': 13.932150840759277, 'mean_eig': 1.000099127312881, 'trace': 14.001387782380334, 'cond_like': 131530.17483601833}
+  COV-F: {'dim': 192, 'min_eig': 9.271639282815158e-05, 'max_eig': 92.61263275146484, 'mean_eig': 1.0000998443728502, 'trace': 192.01917011958722, 'cond_like': 998880.8874728436}
+  SNR= 0.0 dB | LS-lin NMSE=1.4272e-01 power=1.1152 corr=0.9340 | LS-2D NMSE=5.1036e-01 power=0.4279 corr=0.7016
+  SNR= 6.0 dB | LS-lin NMSE=4.7391e-02 power=1.0204 corr=0.9767 | LS-2D NMSE=4.5550e-01 power=0.4862 corr=0.7394
+  SNR=10.0 dB | LS-lin NMSE=2.8534e-02 power=1.0017 corr=0.9859 | LS-2D NMSE=4.1294e-01 power=0.5429 corr=0.7671
+----------------------------------------------------------------------------------------------------
+VARIANT=tf_order static_clean=False cache=probe_cov_tf_order.npz
+  COV-T: {'dim': 14, 'min_eig': 0.001004646997898817, 'max_eig': 13.917871475219727, 'mean_eig': 0.999998504487199, 'trace': 13.999979062820785, 'cond_like': 13853.494316240882}
+  COV-F: {'dim': 192, 'min_eig': 0.0009906066115945578, 'max_eig': 89.66460418701172, 'mean_eig': 0.9999998150160536, 'trace': 191.9999644830823, 'cond_like': 90514.84528523443}
+  SNR= 0.0 dB | LS-lin NMSE=1.4365e-01 power=1.1194 corr=0.9338 | LS-2D NMSE=5.0468e-01 power=0.4406 corr=0.7052
+  SNR= 6.0 dB | LS-lin NMSE=4.6974e-02 power=1.0217 corr=0.9770 | LS-2D NMSE=4.4059e-01 power=0.4936 corr=0.7496
+  SNR=10.0 dB | LS-lin NMSE=2.8287e-02 power=1.0031 corr=0.9861 | LS-2D NMSE=4.1030e-01 power=0.5295 corr=0.7693
+----------------------------------------------------------------------------------------------------
+VARIANT=current_twc2 static_clean=True cache=probe_cov_current_twc2.npz
+  COV-T: {'dim': 14, 'min_eig': 0.0009971621911972761, 'max_eig': 13.987009048461914, 'mean_eig': 0.9999996699293011, 'trace': 13.999995379010215, 'cond_like': 14026.814466027783}
+  COV-F: {'dim': 192, 'min_eig': 0.0009920444572344422, 'max_eig': 90.34928131103516, 'mean_eig': 0.9999996557950604, 'trace': 191.9999339126516, 'cond_like': 91073.82300477246}
+  SNR= 0.0 dB | LS-lin NMSE=1.3185e-01 power=1.1188 corr=0.9393 | LS-2D NMSE=5.0033e-01 power=0.4370 corr=0.7084
+  SNR= 6.0 dB | LS-lin NMSE=3.5896e-02 power=1.0211 corr=0.9823 | LS-2D NMSE=4.2001e-01 power=0.5098 corr=0.7631
+  SNR=10.0 dB | LS-lin NMSE=1.6628e-02 power=1.0021 corr=0.9917 | LS-2D NMSE=3.8790e-01 power=0.5456 corr=0.7836
+----------------------------------------------------------------------------------------------------
